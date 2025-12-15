@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">RS</div>
+                <div class="brand-text">
+                    <div class="brand-name">RS</div>
+                    <div class="tagline">Modern Substainable Clothes</div>
+                </div>
+
+
+            </div>
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact-section">Contact US</a>
+                <a class="btn" href="#shop">Shop</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div>
+                    <h1>Elevate your everyday — comfortable, conscious clothing</h1>
+                    <p>Premium fabrics, clean minimal design and sustainable production. New seasonal drop available
+                        now.
+                    </p>
+                    <div class="cta-row">
+                        <a class="btn" href="#shop">Shop Now</a>
+                    </div>
+                    <div style="margin-top: 20px;color:var(--muted);font-size: 14px;">Free shipping on orders above
+                        ₹2,000 •
+                        Easy returns</div>
+                </div>
+            </section>
+            <section id="products">
+                <div class="section-title">
+                    <div class="muted">Showing 6 items</div>
+                </div>
+
+                <div class="grid">
+                    <div class="card">
+                        <img class="product-img" src="losse fit hoodie.avif" alt="product">
+                        <div class="product-title">Loose Fit Hoodie</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹800</div>
+                    </div>
+
+                    <div class="card">
+                        <img class="product-img" src="bold straight fit.webp" alt="product">
+                        <div class="product-title">Mens Bold Straight Fit Jeans</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹850</div>
+                    </div>
+                    <div class="card">
+                        <img class="product-img" src="baggy jeans.webp" alt="product">
+                        <div class="product-title">Mens Baggy Jeans</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹850</div>
+                    </div>
+                    <div class="card">
+                        <img class="product-img" src="bootcut jeans.webp" alt="product">
+                        <div class="product-title">Bootcut Jeans</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹750</div>
+                    </div>
+                    <div class="card">
+                        <img class="product-img" src="white hoodie.webp" alt="product">
+                        <div class="product-title">Polo White Hooide</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹800</div>
+                    </div>
+                    <div class="card">
+                        <img class="product-img" src="straight fit lower.jpg" alt="product">
+                        <div class="product-title">Straight Fit Lower</div>
+                        <div class="muted">soft cotton</div>
+                        <div class="price">₹700</div>
+                    </div>
+            </section>
+            <section id="contact-section">
+
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>📞 Phone: +91 7988468914</p>
+                    <p>For any query - rsclothing798@gmail.com</p>
+                    <p>📍 Outlet: Bhiwani, Haryana (127021)</p>
+                    <div class="contact-buttons">
+                        <a class="btn" href="https://wa.me/917988468914" target="_blank">WhatsApp Us</a>
+                        <a class="btn" href="" target="_blank">Instagram Us</a>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+
+        </main>
+        <footer>
+            © <span id="year"></span> | RS - All rights reserved.
+        </footer>
+        <script>
+            // Auto Year Update
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Smooth Scroll for Navigation
+            document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+
+        </script>
+    </div>
+
+</body>
+
+</html>
